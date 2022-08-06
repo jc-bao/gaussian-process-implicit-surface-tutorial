@@ -2,8 +2,16 @@
 
 ## Gaussian Process Regression
 
+### Resources
+
+http://gaussianprocess.org/gpml/chapters/RW2.pdf
+
+### Q&A
+
 Q: What it is?
+
 A: 
+
 **Weight Matrix View**
 > how to express a function in a linear combinition of other functions
 * Objective: Learning w:
