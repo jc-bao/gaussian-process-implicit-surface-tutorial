@@ -178,16 +178,18 @@ where beta is the combination coefficient, which can be represented by a Gaussia
 |![](https://tva1.sinaimg.cn/large/e6c9d24egy1h4yr1rthgwj208s073weo.jpg)|![](https://tva1.sinaimg.cn/large/e6c9d24egy1h4yr23o61uj206x06qglq.jpg)
 |
 
-- [ ] finish 3d object reconstruction (22022.8.7)
-  - [ ] expand from 2d cases:
-
+- [x] finish 3d object reconstruction (22022.8.7)
 
 |xyz projection|3d|
 |-|-|
 |![](https://tva1.sinaimg.cn/large/e6c9d24egy1h4yxo6nzt6j21gm0i00xe.jpg)|![](https://tva1.sinaimg.cn/large/e6c9d24egy1h4yxuvtt28j20gk0dkgm2.jpg)|
 
-  - [ ] reconstruct object with open top
-
 |xyz projection|heat map|
 |-|-|
 |![](https://tva1.sinaimg.cn/large/e6c9d24egy1h4yxtn2c6cj21g20hytcy.jpg)|![](https://tva1.sinaimg.cn/large/e6c9d24egy1h4yxta83vfj20ho0eqwf6.jpg)|
+
+## Questions
+
+Q: How to integrate the GPR with the ICP?
+
+Q: How to keep the tiny features in the surface?
