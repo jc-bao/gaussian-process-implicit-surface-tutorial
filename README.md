@@ -167,3 +167,27 @@ g(\mathbf{x}) \sim \mathcal{G} \mathcal{P}\left(\mathbf{h}(\mathbf{x})^{\top} \m
 \end{aligned}
 $$
 where beta is the combination coefficient, which can be represented by a Gaussian distribution.
+
+
+## TODO Lists
+
+- [x] finish 2d object reconstruction (22022.8.6)
+
+|2d|heat map|
+|-|-|
+|![](https://tva1.sinaimg.cn/large/e6c9d24egy1h4yr1rthgwj208s073weo.jpg)|![](https://tva1.sinaimg.cn/large/e6c9d24egy1h4yr23o61uj206x06qglq.jpg)
+|
+
+- [ ] finish 3d object reconstruction (22022.8.7)
+  - [ ] expand from 2d cases:
+
+
+|xyz projection|3d|
+|-|-|
+|![](https://tva1.sinaimg.cn/large/e6c9d24egy1h4yxo6nzt6j21gm0i00xe.jpg)|![](https://tva1.sinaimg.cn/large/e6c9d24egy1h4yxuvtt28j20gk0dkgm2.jpg)|
+
+  - [ ] reconstruct object with open top
+
+|xyz projection|heat map|
+|-|-|
+|![](https://tva1.sinaimg.cn/large/e6c9d24egy1h4yxtn2c6cj21g20hytcy.jpg)|![](https://tva1.sinaimg.cn/large/e6c9d24egy1h4yxta83vfj20ho0eqwf6.jpg)|
