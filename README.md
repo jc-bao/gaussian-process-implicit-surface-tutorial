@@ -15,23 +15,30 @@ A:
 **Weight Matrix View**
 > how to express a function in a linear combinition of other functions
 * Objective: Learning w:
+
 $$
 f(\mathbf{x})=\mathbf{x}^{\top} \mathbf{w}, \quad y=f(\mathbf{x})+\varepsilon
 $$
+
 i.e. choosing w to maximize the probability in training set:
+
 $$
 \begin{aligned}
 p(\mathbf{y} \mid X, \mathbf{w}) &=\prod_{i=1}^{n} p\left(y_{i} \mid \mathbf{x}_{i}, \mathbf{w}\right)=\prod_{i=1}^{n} \frac{1}{\sqrt{2 \pi} \sigma_{n}} \exp \left(-\frac{\left(y_{i}-\mathbf{x}_{i}^{\top} \mathbf{w}\right)^{2}}{2 \sigma_{n}^{2}}\right) \\
 &=\frac{1}{\left(2 \pi \sigma_{n}^{2}\right)^{n / 2}} \exp \left(-\frac{1}{2 \sigma_{n}^{2}}\left|\mathbf{y}-X^{\top} \mathbf{w}\right|^{2}\right)=\mathcal{N}\left(X^{\top} \mathbf{w}, \sigma_{n}^{2} I\right)
 \end{aligned}
 $$
+
 * How to get w:
 View w as a Gaussian Distribution, we update the posterior distribution of w by Bayes's rule (MAP):
+
 $$
 \mathbf{w} \sim \mathcal{N}\left(\mathbf{0}, \Sigma_{p}\right) \\
 p(\mathbf{w} \mid \mathbf{y}, X)=\frac{p(\mathbf{y} \mid X, \mathbf{w}) p(\mathbf{w})}{p(\mathbf{y} \mid X)} \sim \mathcal{N}\left(\overline{\mathbf{w}}=\frac{1}{\sigma_{n}^{2}} A^{-1} X \mathbf{y}, A^{-1}\right), A=\sigma_{n}^{-2} X X^{\top}+\Sigma_{p}^{-1}
 $$
+
 * We can predict without getting w:
+
 $$
 \begin{aligned}
 p\left(f_{*} \mid \mathbf{x}_{*}, X, \mathbf{y}\right) &=\int p\left(f_{*} \mid \mathbf{x}_{*}, \mathbf{w}\right) p(\mathbf{w} \mid X, \mathbf{y}) d \mathbf{w} \\
@@ -54,6 +61,7 @@ f_{*} \mid \mathbf{x}_{*}, X, \mathbf{y} \sim \mathcal{N}(& \phi_{*}^{\top} \Sig
 $$
 
 inspired by inner dot product, we define the kernel function as:
+
 $$
 k\left(\mathbf{x}, \mathbf{x}^{\prime}\right)=\phi(\mathbf{x})^{\top} \Sigma_{p} \phi\left(\mathbf{x}^{\prime}\right)
 $$
