@@ -211,14 +211,33 @@ A:
 
 1. factor graph: factorize high-dimensional distribution to smaller one. 
   Example: Baysian network. density $p(\Theta) \triangleq \prod_{j} p\left(\theta_{j} \mid \pi_{j}\right)$. theta is current node, pi is parent node.
+  Update Method: MAP
+
+    $$
+        \begin{aligned}
+   X^{M A P} &=\underset{X}{\operatorname{argmax}} p(X \mid Z) 
+   &=\underset{X}{\operatorname{argmax}} \frac{p(Z \mid X) p(X)}{p(Z)} .
+   &=\underset{X}{\operatorname{argmax}} l(X ; Z) p(X) .
+   \end{aligned}
+    $$
+
+    X is robot position, Z is observation
+
+  
   
 Q: How is this factor graph method related to the ICP + GO method?
 
-A:  
+A:  The description of graph is different. 
+In GO, the edge of graph is RMSE. In Factor Graph, the edge if gaussian distribution. 
+But when we set the covarience of FG to RMSE, the result is the same.  
 
+Representation: 
+   ICP+GO Method: transition matrix
+   GPIS: Gaussian covariance
+
+In GPIS surface representation, some people constrain the reconstruction range for higher speed. 
 
     
->>>>>>> 18c439749d256ac61f28beb35dfe8020e3746cfe
 
 ## Questions
 
