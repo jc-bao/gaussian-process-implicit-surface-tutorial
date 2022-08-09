@@ -188,8 +188,14 @@ where beta is the combination coefficient, which can be represented by a Gaussia
 |-|-|
 |![](https://tva1.sinaimg.cn/large/e6c9d24egy1h4yxtn2c6cj21g20hytcy.jpg)|![](https://tva1.sinaimg.cn/large/e6c9d24egy1h4yxta83vfj20ho0eqwf6.jpg)|
 
+- [ ] changing judge function to inner judgement
+
 ## Questions
 
 Q: How to integrate the GPR with the ICP?
 
 Q: How to keep the tiny features in the surface?
+
+Q: do we need to scale the data to [0, 1) when doing GPR?
+
+Q: How to downsample data to get variance?
