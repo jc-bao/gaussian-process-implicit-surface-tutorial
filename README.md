@@ -211,7 +211,7 @@ A:
   
 Q: How is this factor graph method related to the ICP + GO method?
 
-A: 
+A:  
 
 
     
