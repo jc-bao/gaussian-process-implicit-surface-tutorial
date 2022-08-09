@@ -157,11 +157,14 @@ Q: How to deal with not zero mean function?
 
 A: 
 Trival Solution: using fixed mean function:
+
 $$
 f(\mathbf{x}) \sim \mathcal{G P}\left(m(\mathbf{x}), k\left(\mathbf{x}, \mathbf{x}^{\prime}\right)\right) \\ 
 \overline{\mathbf{f}}_{*}=\mathbf{m}\left(X_{*}\right)+K\left(X_{*}, X\right) K_{y}^{-1}(\mathbf{y}-\mathbf{m}(X))
 $$
+
 Solution: specify mean function bases:
+
 $$
 g(\mathbf{x})=f(\mathbf{x})+\mathbf{h}(\mathbf{x})^{\top} \boldsymbol{\beta}, \text { where } f(\mathbf{x}) \sim \mathcal{G P}\left(0, k\left(\mathbf{x}, \mathbf{x}^{\prime}\right)\right) \\
 g(\mathbf{x}) \sim \mathcal{G} \mathcal{P}\left(\mathbf{h}(\mathbf{x})^{\top} \mathbf{b}, k\left(\mathbf{x}, \mathbf{x}^{\prime}\right)+\mathbf{h}(\mathbf{x})^{\top} B \mathbf{h}\left(\mathbf{x}^{\prime}\right)\right) \\
@@ -174,6 +177,7 @@ g(\mathbf{x}) \sim \mathcal{G} \mathcal{P}\left(\mathbf{h}(\mathbf{x})^{\top} \m
 &-\frac{1}{2} \log \left|K_{y}+H^{\top} B H\right|-\frac{n}{2} \log 2 \pi
 \end{aligned}
 $$
+
 where beta is the combination coefficient, which can be represented by a Gaussian distribution.
 
 
@@ -195,6 +199,22 @@ where beta is the combination coefficient, which can be represented by a Gaussia
 |xyz projection|heat map|
 |-|-|
 |![](https://tva1.sinaimg.cn/large/e6c9d24egy1h4yxtn2c6cj21g20hytcy.jpg)|![](https://tva1.sinaimg.cn/large/e6c9d24egy1h4yxta83vfj20ho0eqwf6.jpg)|
+
+## Spatial Factor Graph
+
+Q: What is it?
+
+A: 
+
+1. factor graph: factorize high-dimensional distribution to smaller one. 
+  Example: Baysian network. density $p(\Theta) \triangleq \prod_{j} p\left(\theta_{j} \mid \pi_{j}\right)$. theta is current node, pi is parent node.
+  
+Q: How is this factor graph method related to the ICP + GO method?
+
+A: 
+
+
+    
 
 ## Questions
 
